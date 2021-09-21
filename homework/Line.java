@@ -42,15 +42,14 @@ public class Line {
     public String toString() {
         //String lineString = "\t";
         String lineString = "";
-        //int i = 0;
+        int i = 0;
         for (Position p : positions) {
             lineString += p.linable.toString();
-            /*
             i++;
             if (i % 8 == 0) {
                 lineString += '\n';
             }
-            */
+            
         }
         return lineString;
     }
