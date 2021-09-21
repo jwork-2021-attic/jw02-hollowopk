@@ -23,7 +23,7 @@ public class Scene {
         Sorter bubbleSorter = new BubbleSorter();
         Sorter quickSorter = new QuickSorter();
 
-        theSnake.setSorter(bubbleSorter);
+        theSnake.setSorter(quickSorter);
 
         String log = theSnake.lineUp(line);
 
