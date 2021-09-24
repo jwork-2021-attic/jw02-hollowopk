@@ -1,0 +1,36 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=16
+' 12:45 ~ 13:46
+
+@startuml
+actor 大娃 as 1 #Red
+actor 二娃 as 2 #Orange
+actor 三娃 as 3 #Yellow
+actor 四娃 as 4 #Green
+actor 五娃 as 5 #LightBlue
+actor 六娃 as 6 #SkyBlue
+actor 七娃 as 7 #Pink
+
+5 <-[#Red]> 7 : swap
+
+2 <-[#Red]> 7 : swap
+
+6 <-[#Red]> 7 : swap
+
+4 <-[#Red]> 7 : swap
+
+1 <-[#Red]> 7 : swap
+
+2 <-[#Red]> 3 : swap
+
+4 <-[#Red]> 5 : swap
+
+1 <-[#Red]> 5 : swap
+
+1 <-[#Red]> 4 : swap
+
+1 <-[#Red]> 3 : swap
+
+1 <-[#Red]> 2 : swap
+
+@enduml
+

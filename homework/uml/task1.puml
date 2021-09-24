@@ -1,0 +1,111 @@
+@startuml
+
+interface Sorter {
+
+    load(int[] elements);
+    sort();
+    getPlan();
+
+}
+
+class BubbleSorter {
+
+    int[] a
+    String plan
+
+    load(int[] a)
+    swap(int i, int j)
+    sort()
+    getPlan()
+
+}
+
+class Geezer {
+
+    Geezer theGeezer
+    Sorter sorter
+
+    getTheGeezer()
+    Geezer()
+    setSorter(Sorter sorter)
+    lineUp(Line line)
+    parsePlan(String plan)
+    execute(String step)
+
+}
+
+enum Gourd {
+
+    ONE(204, 0, 0)
+    TWO(255, 165, 0)
+    THREE(252, 233, 79)
+    FOUR(78, 154, 6)
+    FIVE(50, 175, 255)
+    SIX(114, 159, 207)
+    SEVEN(173, 127, 168)
+
+    int r
+    int g
+    int b
+    Position position
+
+    Gourd(int r, int g, int b)
+    getGourdByRank(int rank)
+    rank()
+    toString()
+    setPosition(Position position)
+    getPosition()
+    swapPosition(Gourd another)
+    getValue()
+
+}
+
+interface Linable {
+
+    setPosition(Position position)
+    getPosition()
+    getValue()
+
+}
+
+class Line {
+
+    Position[] positions
+    Line(int length)
+    put(Linable linable, int i)
+    get(int i)
+    toString()
+    toArray()
+
+}
+
+class Position {
+
+    Linable linable
+
+    Position(Linable linable)
+    setLinable(Linable linable)
+
+}
+
+class Scene {
+
+    main(String[] args)
+
+}
+
+interface Sorter {
+
+    load(int[] elements)
+    sort()
+    getPlan()
+    
+}
+
+BubbleSorter --|> Sorter
+
+Gourd --|> Linable
+
+Position --|> Line
+
+@enduml
