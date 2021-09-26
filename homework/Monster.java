@@ -20,6 +20,9 @@ public class Monster implements Linable {
 
     @Override
     public String toString() {
+        if (rank < 10) {
+            return "\033[48;2;" + this.r + ";" + this.g + ";" + this.b + ";38;2;0;0;0m    " + this.rank + "   \033[0m";
+        }
         return "\033[48;2;" + this.r + ";" + this.g + ";" + this.b + ";38;2;0;0;0m    " + this.rank + "  \033[0m";
     }
 

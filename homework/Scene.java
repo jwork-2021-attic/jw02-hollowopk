@@ -8,14 +8,17 @@ import java.util.Random;
 public class Scene {
 
     public static void main(String[] args) throws IOException {
-        int size = 64;
+        int length = 8;
+        int size = length * length;
         Line line = new Line(size);
+        Matrix matrix = new Matrix(length);
         int[] randomArray = getRandomArray(size);
         for (int i = 0;i < size;i++) {
             int r = (Colors.colors[i] >> 16) & 0xff;
             int g = (Colors.colors[i] >> 8) & 0xff;
             int b = Colors.colors[i] & 0xff;
             line.put(new Monster(r,g,b,randomArray[i]), i);
+            matrix.put(new Monster(r,g,b,randomArray[i]), i);
         }
 
         Snake theSnake = Snake.getTheSnake();
@@ -23,9 +26,10 @@ public class Scene {
         Sorter bubbleSorter = new BubbleSorter();
         Sorter quickSorter = new QuickSorter();
 
-        theSnake.setSorter(quickSorter);
+        theSnake.setSorter(bubbleSorter);
 
-        String log = theSnake.lineUp(line);
+        //String log = theSnake.lineUp(line);
+        String log = theSnake.lineUp(matrix);
 
         BufferedWriter writer;
         writer = new BufferedWriter(new FileWriter("result.txt"));

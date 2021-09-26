@@ -38,9 +38,9 @@
 
 冒泡排序录屏：
 
-[![asciicast](https://asciinema.org/a/ZPukIuv7qWa4zFeCn2HYQpPfZ.svg)](https://asciinema.org/a/ZPukIuv7qWa4zFeCn2HYQpPfZ)
+[[![asciicast](https://asciinema.org/a/eresBrd5B21rq4to2pgic3WRe.svg)](https://asciinema.org/a/eresBrd5B21rq4to2pgic3WRe)](https://asciinema.org/a/ZPukIuv7qWa4zFeCn2HYQpPfZ)
 
 快速排序录屏：
 
-[![asciicast](https://asciinema.org/a/qTEh7SZzr1qoprklFp6b2PpJ8.svg)](https://asciinema.org/a/qTEh7SZzr1qoprklFp6b2PpJ8)
+[[![asciicast](https://asciinema.org/a/7hRpZNiSAYty0GaltwwGlDyg6.svg)](https://asciinema.org/a/7hRpZNiSAYty0GaltwwGlDyg6)](https://asciinema.org/a/qTEh7SZzr1qoprklFp6b2PpJ8)
 

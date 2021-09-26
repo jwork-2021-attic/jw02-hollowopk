@@ -31,6 +31,10 @@ public class Line {
             this.linable = linable;
         }
 
+        public Linable getLinable() {
+            return linable;
+        }
+
         public void setLinable(Linable linable) {
             this.linable = linable;
             linable.setPosition(this);

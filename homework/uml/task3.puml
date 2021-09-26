@@ -89,6 +89,17 @@ class Line {
 
 }
 
+class Matrix {
+
+    Position[][] positions
+    Matrix(int length)
+    put(Linable linable, int i)
+    get(int i)
+    toString()
+    toArray()
+
+}
+
 class Position {
 
     Linable linable
@@ -120,5 +131,7 @@ QuickSorter --|> Sorter
 Monster --|> Linable
 
 Position --|> Line
+
+Matrix --|> Line
 
 @enduml
