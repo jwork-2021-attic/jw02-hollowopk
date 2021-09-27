@@ -1,0 +1,137 @@
+@startuml
+
+interface Sorter {
+
+    load(int[] elements);
+    sort();
+    getPlan();
+
+}
+
+class BubbleSorter {
+
+    int[] a
+    String plan
+
+    load(int[] a)
+    swap(int i, int j)
+    sort()
+    getPlan()
+
+}
+
+class QuickSorter {
+
+    int[] a
+    String plan
+
+    load(int[] a)
+    swap(int i, int j)
+    sort()
+    quicksort(int left, int right)
+    getPlan()
+
+}
+
+class Colors {
+
+    int[] colors
+
+}
+
+class Snake {
+
+    Snake theSnake
+    Sorter sorter
+
+    getTheSnake()
+    Snake()
+    setSorter(Sorter sorter)
+    lineUp(Line line)
+    parsePlan(String plan)
+    execute(String step,Line line)
+
+}
+
+class Monster {
+
+    int r
+    int g
+    int b
+    int rank
+    Position position
+
+    Monster(int r, int g, int b, int rank)
+    toString()
+    setPosition(Position position)
+    getPosition()
+    swapPosition(Monster another)
+    getValue()
+
+}
+
+interface Linable {
+
+    setPosition(Position position)
+    getPosition()
+    getValue()
+
+}
+
+class Line {
+
+    Position[] positions
+    Line(int length)
+    put(Linable linable, int i)
+    get(int i)
+    toString()
+    toArray()
+
+}
+
+class Matrix {
+
+    Position[][] positions
+    Matrix(int length)
+    put(Linable linable, int i)
+    get(int i)
+    toString()
+    toArray()
+
+}
+
+class Position {
+
+    Linable linable
+
+    Position(Linable linable)
+    setLinable(Linable linable)
+
+}
+
+class Scene {
+
+    main(String[] args)
+    getRandomArray(int size)
+
+}
+
+interface Sorter {
+
+    load(int[] elements)
+    sort()
+    getPlan()
+    
+}
+
+BubbleSorter --|> Sorter
+
+QuickSorter --|> Sorter
+
+Monster --|> Linable
+
+Position --|> Line
+
+Matrix --|> Line
+
+@enduml
